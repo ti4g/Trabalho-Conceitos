@@ -1,0 +1,96 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* No seu arquivo style.css */
+header {
+    background-color: rgb(147, 150, 244); /* Cor de fundo do cabeçalho */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+}
+
+
+.header-content {
+    display: flex; /* Usa o modelo de layout flexível */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+}
+
+.header-content img {
+    margin-right: 10px; /* Margem à direita para separar a imagem do texto */
+}
+
+.header-content h1 {
+    margin: 0; /* Remove a margem padrão do título */
+    font-size: 60px; /* Tamanho do texto do título */
+    color: #343a40; /* Cor do texto */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que os elementos se movam para a próxima linha conforme necessário */
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(122, 126, 237);
+
+}
+
+.sections-container {
+    width: 100%;
+    /* Para garantir que ocupe 100% da largura disponível */
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 10px;
+}
+
+section {
+    flex: 1;
+    /*Faz com que a section "fique presa" ao main na página*/
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 18px;
+    /*Curvatura da borda*/
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    /*Sombreado*/
+    transition: box-shadow 0.3s ease;
+    /*Tempo de transição para a sombra aparecer*/
+    margin: 5px;
+    /*Margem para as sections */
+    background-color: #f0f8ff;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+section:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+p{
+    font-size: 20px;
+}
